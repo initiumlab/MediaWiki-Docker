@@ -11,3 +11,24 @@
 [submodule "mediawiki/extensions/VisualEditor"]
 	path = mediawiki/extensions/VisualEditor
 	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/VisualEditor.git
+[submodule "mediawiki/extensions/SyntaxHighlight_GeSHi"]
+	path = mediawiki/extensions/SyntaxHighlight_GeSHi
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SyntaxHighlight_GeSHi.git
+[submodule "mediawiki/extensions/ParserFunctions"]
+	path = mediawiki/extensions/ParserFunctions
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ParserFunctions.git
+[submodule "mediawiki/extensions/WikiEditor"]
+	path = mediawiki/extensions/WikiEditor
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/WikiEditor.git
+[submodule "mediawiki/extensions/Renameuser"]
+	path = mediawiki/extensions/Renameuser
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Renameuser.git
+[submodule "mediawiki/extensions/InputBox"]
+	path = mediawiki/extensions/InputBox
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/InputBox.git
+[submodule "mediawiki/extensions/Cite"]
+	path = mediawiki/extensions/Cite
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Cite.git
+[submodule "mediawiki/extensions/Interwiki"]
+	path = mediawiki/extensions/Interwiki
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Interwiki.git
