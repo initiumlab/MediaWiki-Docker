@@ -15,61 +15,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
 }
 
-## Uncomment this to disable output compression
-# $wgDisableOutputCompression = true;
-
-$wgSitename = "Initium";
-
-## The URL base path to the directory containing the wiki;
-## defaults for all runtime URL paths are based off of this.
-## For more information on customizing the URLs
-## (like /w/index.php/Page_title to /wiki/Page_title) please see:
-## https://www.mediawiki.org/wiki/Manual:Short_URL
-$wgScriptPath = "/w";
-
-## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://192.168.99.100";
-
-
-## The URL path to static resources (images, scripts, etc.)
-$wgResourceBasePath = $wgScriptPath;
-
-## The URL path to the logo.  Make sure you change this from the default,
-## or else you'll overwrite your logo when you upgrade!
-$wgLogo = "$wgResourceBasePath/resources/assets/wiki.png";
-
-## UPO means: this is also a user preference option
-
-$wgEnableEmail = false;
-$wgEnableUserEmail = true; # UPO
-
-$wgEmergencyContact = "apache@192.168.99.100";
-$wgPasswordSender = "apache@192.168.99.100";
-
-$wgEnotifUserTalk = false; # UPO
-$wgEnotifWatchlist = false; # UPO
-$wgEmailAuthentication = true;
-
-## Database settings
-$wgDBtype = "mysql";
-$wgDBserver = "mysql";
-$wgDBname = "initiumlab_wiki";
-$wgDBuser = "root";
-$wgDBpassword = "password";
-
-# MySQL specific settings
-$wgDBprefix = "";
-
-# MySQL table options to use during installation or update
-$wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
-
-# Experimental charset support for MySQL 5.0.
-$wgDBmysql5 = false;
-
-## Shared memory settings
-$wgMainCacheType = CACHE_NONE;
-$wgMemCachedServers = array();
-
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
 $wgEnableUploads = true;
@@ -95,36 +40,14 @@ $wgShellLocale = "C.UTF-8";
 ## be publically accessible from the web.
 #$wgCacheDirectory = "$IP/cache";
 
-# Site language code, should be one of the list in ./languages/Names.php
-$wgLanguageCode = "en";
-
-$wgSecretKey = "ee0efe6c8b4bc1ee5ccd906ad783aeb20115f061a3f9d85e6850612104920701";
-
-# Site upgrade key. Must be set to a string (default provided) to turn on the
-# web installer while LocalSettings.php is in place
-$wgUpgradeKey = "08882e35d74f30cf";
-
-## For attaching licensing metadata to pages, and displaying an
-## appropriate copyright notice / icon. GNU Free Documentation
-## License and Creative Commons licenses are supported so far.
-$wgRightsPage = ""; # Set to the title of a wiki page that describes your license/copyright
-$wgRightsUrl = "";
-$wgRightsText = "";
-$wgRightsIcon = "";
-
 # Path to the GNU diff3 utility. Used for conflict resolution.
 $wgDiff3 = "/usr/bin/diff3";
 
-# The following permissions were set based on your choice in the installer
-$wgGroupPermissions['*']['createaccount'] = false;
-$wgGroupPermissions['*']['edit'] = false;
-$wgGroupPermissions['*']['read'] = false;
-
-wfLoadSkin( 'Vector' );
-## Default skin: you can change the default skin. Use the internal symbolic
-## names, ie 'vector', 'monobook':
-$wgDefaultSkin = "Vector";
-
-# End of automatically generated settings.
-# Add more configuration options below.
-
+# Load settings from settings.d folder
+foreach(
+	array_merge(
+		glob( __DIR__ . "/settings.d/*.php" )
+	) as $conffile
+) {
+	include_once $conffile;
+}
