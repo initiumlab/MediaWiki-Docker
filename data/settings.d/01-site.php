@@ -16,10 +16,6 @@ $wgServer = "http://192.168.99.100";
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
 
-## The URL path to the logo.  Make sure you change this from the default,
-## or else you'll overwrite your logo when you upgrade!
-$wgLogo = "$wgResourceBasePath/resources/assets/wiki.png";
-
 # Site language code, should be one of the list in ./languages/Names.php
 $wgLanguageCode = "en";
 
@@ -31,14 +27,15 @@ $wgRightsUrl = "";
 $wgRightsText = "";
 $wgRightsIcon = "";
 
-# The following permissions were set based on your choice in the installer
-$wgGroupPermissions['*']['createaccount'] = false;
-$wgGroupPermissions['*']['edit'] = false;
-$wgGroupPermissions['*']['read'] = false;
-
 #Set Default Timezone
 $wgLocaltimezone = "Asia/Hong_Kong";
 date_default_timezone_set( $wgLocaltimezone );
 
 # open link in new tab
 $wgExternalLinkTarget = '_blank';
+
+# Enables the magic words {{PAGESINNAMESPACE}}
+$wgAllowSlowParserFunctions = true;
+
+# Enable subpages in the main namespace
+$wgNamespacesWithSubpages[NS_MAIN] = true;
