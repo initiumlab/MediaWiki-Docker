@@ -39,3 +39,10 @@ $wgAllowSlowParserFunctions = true;
 
 # Enable subpages in the main namespace
 $wgNamespacesWithSubpages[NS_MAIN] = true;
+
+# InstantCommons allows wiki to use images from https://commons.wikimedia.org
+$wgUseInstantCommons = false;
+
+# Path to the GNU diff3 utility. Used for conflict resolution.
+$wgDiff3 = "/usr/bin/diff3";
+

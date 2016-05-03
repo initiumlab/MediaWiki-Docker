@@ -1,0 +1,1 @@
+Any .sql file will be automatically imported at the creation of mysql container.

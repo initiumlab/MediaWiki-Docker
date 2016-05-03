@@ -24,13 +24,26 @@ Installed extensions:
 
 For VisualEditor, you have to run `cd mediawiki/extensions/VisualEditor && git submodule update --init`.
 
-## Upgrade
+### Upgrade
 
 To run the `upgrade.php` script:
 
 ```
 $ docker-compose run mediawiki php /var/www/html/w/maintenance/update.php
 ```
+### Database backup and restore
+
+To dump the database, first start `docker-compose up`, find the mysql container id by `docker-compose ps`, and then run:
+
+```
+$ docker exec <MYSQL_CONTAINER_ID> sh -c 'exec mysqldump initium_wiki -B -uroot -p"password"' > dump.sql
+```
+
+To restore database from a MySQL dump file:
+
+- run `docker-compose rm mysql` to delete existing database
+- put the dump file at `data/dump` folder
+- run `docker-compose up`, the database will be created
 
 ## License
 

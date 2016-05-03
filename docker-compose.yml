@@ -4,14 +4,18 @@ services:
     image: mysql:5.7.12
     environment:
       - MYSQL_ROOT_PASSWORD=password
+    volumes:
+      - ./data/dump:/docker-entrypoint-initdb.d
   parsoid:
     build:
       context: .
       dockerfile: docker/parsoid/Dockerfile
+    image: cllu/mediawiki-parsoid:1.26.2-1
   mediawiki:
     build:
       context: .
       dockerfile: docker/mediawiki/Dockerfile
+    image: cllu/mediawiki:1.26.2-1
     ports:
       - 80:80
     links:

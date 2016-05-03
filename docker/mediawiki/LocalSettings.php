@@ -11,21 +11,11 @@
 # https://www.mediawiki.org/wiki/Manual:Configuration_settings
 
 # Protect against web entry
-if ( !defined( 'MEDIAWIKI' ) ) {
-	exit;
+if (!defined('MEDIAWIKI')) {
+    exit;
 }
 
-# InstantCommons allows wiki to use images from https://commons.wikimedia.org
-$wgUseInstantCommons = false;
-
-# Path to the GNU diff3 utility. Used for conflict resolution.
-$wgDiff3 = "/usr/bin/diff3";
-
 # Load settings from settings.d folder
-foreach(
-	array_merge(
-		glob( __DIR__ . "/settings.d/*.php" )
-	) as $conffile
-) {
-	include_once $conffile;
+foreach (array_merge(glob(__DIR__ . "/settings.d/*.php")) as $conffile) {
+    include_once $conffile;
 }

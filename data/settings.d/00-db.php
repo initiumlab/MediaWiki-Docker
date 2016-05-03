@@ -2,7 +2,7 @@
 ## Database settings
 $wgDBtype = "mysql";
 $wgDBserver = "mysql";
-$wgDBname = "initiumlab_wiki";
+$wgDBname = "initium_wiki";
 $wgDBuser = "root";
 $wgDBpassword = "password";
 
