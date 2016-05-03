@@ -1,0 +1,7 @@
+[submodule "mediawiki/core"]
+	path = mediawiki/core
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/core.git
+	branch = f465524fc4840fb5c8b97e9ee6ffaf2a30c2e644
+[submodule "mediawiki/skins/Vector"]
+	path = mediawiki/skins/Vector
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/skins/Vector.git
