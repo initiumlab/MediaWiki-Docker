@@ -15,12 +15,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
 }
 
-## To enable image uploads, make sure the 'images' directory
-## is writable, then set this to true:
-$wgEnableUploads = true;
-$wgUseImageMagick = true;
-$wgImageMagickConvertCommand = "/usr/bin/convert";
-
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
 $wgUseInstantCommons = false;
 

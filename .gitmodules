@@ -32,3 +32,15 @@
 [submodule "mediawiki/extensions/Interwiki"]
 	path = mediawiki/extensions/Interwiki
 	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Interwiki.git
+[submodule "mediawiki/extensions/News"]
+	path = mediawiki/extensions/News
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/News.git
+[submodule "mediawiki/extensions/Echo"]
+	path = mediawiki/extensions/Echo
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Echo.git
+[submodule "mediawiki/extensions/Flow"]
+	path = mediawiki/extensions/Flow
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Flow.git
+[submodule "mediawiki/extensions/ReplaceText"]
+	path = mediawiki/extensions/ReplaceText
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ReplaceText.git

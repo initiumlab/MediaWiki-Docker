@@ -13,7 +13,6 @@ $wgUsePathInfo = true;
 ## The protocol and server name to use in fully-qualified URLs
 $wgServer = "http://192.168.99.100";
 
-
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
 
@@ -36,3 +35,10 @@ $wgRightsIcon = "";
 $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['*']['edit'] = false;
 $wgGroupPermissions['*']['read'] = false;
+
+#Set Default Timezone
+$wgLocaltimezone = "Asia/Hong_Kong";
+date_default_timezone_set( $wgLocaltimezone );
+
+# open link in new tab
+$wgExternalLinkTarget = '_blank';
