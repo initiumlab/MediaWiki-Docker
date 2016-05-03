@@ -37,4 +37,7 @@ COPY docker/mediawiki/php.ini /usr/local/etc/php/conf.d/mediawiki.ini
 COPY docker/mediawiki/apache.conf /etc/apache2/mediawiki.conf
 RUN echo "Include /etc/apache2/mediawiki.conf" >> /etc/apache2/apache2.conf
 
+# cache folder should be writable for www-data user
+RUN chown -R www-data:www-data /var/www/html/w/cache
+
 CMD ["apache2-foreground"]

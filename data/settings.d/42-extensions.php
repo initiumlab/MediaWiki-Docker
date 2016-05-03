@@ -23,3 +23,13 @@ require_once "$IP/extensions/News/News.php";
 
 wfLoadExtension( 'ReplaceText' );
 $wgGroupPermissions['bureaucrat']['replacetext'] = true;
+
+wfLoadExtension( 'Editcount' );
+
+require_once "$IP/extensions/CustomParser/CustomParser.php";
+
+require_once "$IP/extensions/LookupUser/LookupUser.php";
+// Who can use Special:LookupUser?
+$wgGroupPermissions['*']['lookupuser'] = false;
+$wgGroupPermissions['sysop']['lookupuser'] = true;
+
