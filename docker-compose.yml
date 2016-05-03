@@ -4,6 +4,10 @@ services:
     image: mysql:5.7.12
     environment:
       - MYSQL_ROOT_PASSWORD=password
+  parsoid:
+    build:
+      context: .
+      dockerfile: docker/parsoid/Dockerfile
   mediawiki:
     build:
       context: .
@@ -12,6 +16,7 @@ services:
       - 80:80
     links:
       - mysql
+      - parsoid
     volumes:
       - ./data/images:/var/www/html/w/images
       - ./data/settings.d:/var/www/html/w/settings.d
