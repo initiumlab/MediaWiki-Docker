@@ -40,4 +40,9 @@ RUN echo "Include /etc/apache2/mediawiki.conf" >> /etc/apache2/apache2.conf
 # cache folder should be writable for www-data user
 RUN chown -R www-data:www-data /var/www/html/w/cache
 
+# upload directory should be writable by the www-data user
+VOLUME /var/www/html/w/images
+RUN usermod -u 1000 www-data
+RUN chown -R www-data:www-data /var/www/html/w/images
+
 CMD ["apache2-foreground"]
