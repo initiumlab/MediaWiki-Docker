@@ -28,10 +28,11 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ 
 RUN cd /var/www/html/w && composer install --no-dev
 
 COPY mediawiki/extensions /var/www/html/w/extensions
-COPY mediawiki/skins /var/www/html/w/skins
 
 # Some extensions require additional setup
 RUN cd /var/www/html/w/extensions/SyntaxHighlight_GeSHi && composer install --no-dev
+
+COPY mediawiki/skins /var/www/html/w/skins
 
 COPY docker/mediawiki/LocalSettings.php /var/www/html/w/LocalSettings.php
 COPY docker/mediawiki/php.ini /usr/local/etc/php/conf.d/mediawiki.ini

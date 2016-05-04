@@ -7,7 +7,8 @@ $wgDefaultSkin = "Vector";
 
 ## The URL path to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
-$wgLogo = "$wgResourceBasePath/resources/assets/wiki.png";
+$wgLogo = getenv("WG_LOGO");
+$wgFavicon = getenv("WG_FAVICON");
 
 # Remove links in the footer, as well as the MediaWiki logo
 unset( $wgFooterIcons['poweredby'] );
