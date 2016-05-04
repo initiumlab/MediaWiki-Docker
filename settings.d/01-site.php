@@ -1,5 +1,5 @@
 <?php
-$wgSitename = "Initium";
+$wgSitename = getenv("WG_SITENAME");
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -11,7 +11,7 @@ $wgArticlePath = "/$1";
 $wgUsePathInfo = true;
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://192.168.99.100";
+$wgServer = getenv("WG_SERVER");
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;

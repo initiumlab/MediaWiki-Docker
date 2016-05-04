@@ -4,6 +4,7 @@ services:
     image: mysql:5.7.12
     environment:
       - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=mediawiki
     volumes:
       - ./data/dump:/docker-entrypoint-initdb.d
   parsoid:
@@ -22,6 +23,9 @@ services:
       - mysql
       - parsoid
     environment:
+      WG_SITENAME: MediaWiki
+      WG_DBNAME: mediawiki
+      WG_SERVER: http://192.168.99.100
       WG_SECRET_KEY: ee0efe6c8b4bc1ee5ccd906ad783aeb20115f061a3f9d85e6850612104920701
       WG_UPGRADE_KEY: 08882e35d74f30cf
     volumes:
