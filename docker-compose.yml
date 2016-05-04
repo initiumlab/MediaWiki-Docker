@@ -21,6 +21,8 @@ services:
     links:
       - mysql
       - parsoid
+    environment:
+      WG_SECRET_KEY: ee0efe6c8b4bc1ee5ccd906ad783aeb20115f061a3f9d85e6850612104920701
+      WG_UPGRADE_KEY: 08882e35d74f30cf
     volumes:
       - ./data/images:/var/www/html/w/images
-      - ./data/settings.d:/var/www/html/w/settings.d

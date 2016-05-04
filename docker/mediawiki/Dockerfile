@@ -45,4 +45,7 @@ VOLUME /var/www/html/w/images
 RUN usermod -u 1000 www-data
 RUN chown -R www-data:www-data /var/www/html/w/images
 
+# settings
+COPY settings.d /var/www/html/w/settings.d
+
 CMD ["apache2-foreground"]
