@@ -11,10 +11,12 @@ RUN set -x; \
         libicu-dev \
         libzip-dev \
         imagemagick \
+        python \
     && ln -fs /usr/lib/x86_64-linux-gnu/libzip.so /usr/lib/ \
     && docker-php-ext-install intl mysqli zip mbstring opcache fileinfo \
     && pear install net_smtp \
     && pear install mail \
+    && pecl install apcu-4.0.11 && echo extension=apcu.so > /usr/local/etc/php/conf.d/apcu.ini \
     && apt-get purge -y --auto-remove g++ libicu-dev libzip-dev \
     && rm -rf /var/lib/apt/lists/*
 

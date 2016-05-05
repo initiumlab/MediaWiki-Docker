@@ -1,7 +1,10 @@
 <?php
+
 ## Shared memory settings
-$wgMainCacheType = CACHE_NONE;
+$wgMainCacheType = CACHE_ACCEL;
 $wgMemCachedServers = array();
+$wgUseGzip = true;
+$wgEnableSidebarCache = true;
 
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;

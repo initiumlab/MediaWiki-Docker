@@ -16,7 +16,7 @@ Installed extensions:
 - [ParserFunctions](https://www.mediawiki.org/wiki/Extension:ParserFunctions)
 - [Renameuser](https://www.mediawiki.org/wiki/Extension:Renameuser)
 - [ReplaceText](https://www.mediawiki.org/wiki/Extension:ReplaceText)
-- [SyntaxHighlight_GeSHi](https://www.mediawiki.org/wiki/Extension:SyntaxHighlight)
+- [SyntaxHighlight_GeSHi](https://www.mediawiki.org/wiki/Extension:SyntaxHighlight), depends on Python
 - [VisualEditor](https://www.mediawiki.org/wiki/Extension:VisualEditor)
 - [WikiEditor](https://www.mediawiki.org/wiki/Extension:WikiEditor)
 
