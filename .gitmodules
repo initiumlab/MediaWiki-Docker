@@ -47,3 +47,6 @@
 [submodule "mediawiki/extensions/Editcount"]
 	path = mediawiki/extensions/Editcount
 	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Editcount.git
+[submodule "mediawiki/extensions/Widgets"]
+	path = mediawiki/extensions/Widgets
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Widgets.git

@@ -18,6 +18,7 @@ Installed extensions:
 - [ReplaceText](https://www.mediawiki.org/wiki/Extension:ReplaceText)
 - [SyntaxHighlight_GeSHi](https://www.mediawiki.org/wiki/Extension:SyntaxHighlight), depends on Python
 - [VisualEditor](https://www.mediawiki.org/wiki/Extension:VisualEditor)
+- [Widgets](https://www.mediawiki.org/wiki/Extension:Widgets)
 - [WikiEditor](https://www.mediawiki.org/wiki/Extension:WikiEditor)
 
 ## Usage
@@ -110,6 +111,7 @@ If you want to build the image by yourself:
 - clone this repo
 - `git submodule update --init`.
   - For VisualEditor, you have to run `cd mediawiki/extensions/VisualEditor && git submodule update --init`.
+  - For Widgets, you have to run `cd mediawiki/extensions/Widgets && git submodule update --init`.
 - `docker-compose build`
 
 
