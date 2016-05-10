@@ -42,7 +42,13 @@ require_once "$IP/extensions/CirrusSearch/CirrusSearch.php";
 $wgCirrusSearchServers = array( 'elasticsearch' );
 $wgSearchType = 'CirrusSearch';
 
-require_once( "$IP/extensions/Cargo/Cargo.php" );
 include_once "$IP/extensions/SemanticForms/SemanticForms.php";
+require_once( "$IP/extensions/Cargo/Cargo.php" );
+$wgCargoPageDataColumns[] = CARGO_STORE_CREATION_DATE;
+$wgCargoPageDataColumns[] = CARGO_STORE_MODIFICATION_DATE;
+$wgCargoPageDataColumns[] = CARGO_STORE_CREATOR;
+$wgCargoPageDataColumns[] = CARGO_STORE_FULL_TEXT;
+$wgCargoPageDataColumns[] = CARGO_STORE_CATEGORIES;
+$wgCargoPageDataColumns[] = CARGO_STORE_NUM_REVISIONS;
 
 require_once "$IP/extensions/RandomSelection/RandomSelection.php";
