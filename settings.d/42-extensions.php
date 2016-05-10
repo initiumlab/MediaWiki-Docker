@@ -44,3 +44,5 @@ $wgSearchType = 'CirrusSearch';
 
 require_once( "$IP/extensions/Cargo/Cargo.php" );
 include_once "$IP/extensions/SemanticForms/SemanticForms.php";
+
+require_once "$IP/extensions/RandomSelection/RandomSelection.php";

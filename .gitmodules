@@ -62,3 +62,6 @@
 [submodule "mediawiki/extensions/SemanticForms"]
 	path = mediawiki/extensions/SemanticForms
 	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SemanticForms.git
+[submodule "mediawiki/extensions/RandomSelection"]
+	path = mediawiki/extensions/RandomSelection
+	url = https://github.com/Inclumedia/RandomSelection.git

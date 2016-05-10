@@ -17,6 +17,7 @@ Installed extensions:
 - [LookupUser](https://www.mediawiki.org/wiki/Extension:LookupUser)
 - [News](https://www.mediawiki.org/wiki/Extension:News)
 - [ParserFunctions](https://www.mediawiki.org/wiki/Extension:ParserFunctions)
+- [RandomSelection](https://www.mediawiki.org/wiki/Extension:RandomSelection)
 - [Renameuser](https://www.mediawiki.org/wiki/Extension:Renameuser)
 - [ReplaceText](https://www.mediawiki.org/wiki/Extension:ReplaceText)
 - [SemanticForms](https://www.mediawiki.org/wiki/Extension:SemanticForms)
