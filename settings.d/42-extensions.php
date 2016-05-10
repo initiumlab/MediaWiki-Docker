@@ -41,3 +41,6 @@ wfLoadExtension( 'Elastica' );
 require_once "$IP/extensions/CirrusSearch/CirrusSearch.php";
 $wgCirrusSearchServers = array( 'elasticsearch' );
 $wgSearchType = 'CirrusSearch';
+
+require_once( "$IP/extensions/Cargo/Cargo.php" );
+include_once "$IP/extensions/SemanticForms/SemanticForms.php";

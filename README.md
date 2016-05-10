@@ -4,10 +4,13 @@ Based on MediaWiki release [1.26.2](https://www.mediawiki.org/wiki/Release_notes
 
 Installed extensions:
 
+- [Cargo](https://www.mediawiki.org/wiki/Extension:Cargo)
+- [CirrusSearch](https://www.mediawiki.org/wiki/Extension:CirrusSearch)
 - [Cite](https://www.mediawiki.org/wiki/Extension:Cite)
 - CustomParser
 - [Echo](https://www.mediawiki.org/wiki/Extension:Echo)
 - [Editcount](https://www.mediawiki.org/wiki/Extension:Editcount)
+- [Elastica](https://www.mediawiki.org/wiki/Extension:Elastica)
 - [Flow](https://www.mediawiki.org/wiki/Extension:Flow)
 - [InputBox](https://www.mediawiki.org/wiki/Extension:InputBox)
 - [Interwiki](https://www.mediawiki.org/wiki/Extension:Interwiki)
@@ -16,6 +19,7 @@ Installed extensions:
 - [ParserFunctions](https://www.mediawiki.org/wiki/Extension:ParserFunctions)
 - [Renameuser](https://www.mediawiki.org/wiki/Extension:Renameuser)
 - [ReplaceText](https://www.mediawiki.org/wiki/Extension:ReplaceText)
+- [SemanticForms](https://www.mediawiki.org/wiki/Extension:SemanticForms)
 - [SyntaxHighlight_GeSHi](https://www.mediawiki.org/wiki/Extension:SyntaxHighlight), depends on Python
 - [VisualEditor](https://www.mediawiki.org/wiki/Extension:VisualEditor)
 - [Widgets](https://www.mediawiki.org/wiki/Extension:Widgets)
