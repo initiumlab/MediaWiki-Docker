@@ -33,6 +33,8 @@ A simple `docker-compose.yml` is enough to get started:
 ```yaml
 version: '2'
 services:
+  elasticsearch:
+    image: cllu/mediawiki-elasticsearch:1.7.5-1
   mysql:
     image: mysql:5.7.12
     environment:
@@ -61,7 +63,7 @@ services:
 
 ### Start a new wiki
 
-Run `docker-compose run mediawiki bash` to start a bash:
+Run `docker-compose exec mediawiki bash` to start a bash:
 
 ```
 $ cd /var/www/html/w
@@ -69,6 +71,7 @@ $ mv LocalSettings.php LocalSettings.php.shadow # disable settings so we can ask
 $ php maintenance/install.php --dbname mediawiki --dbserver mysql --dbuser root --dbpass password --server $WG_SERVER --pass password $WG_SITENAME Administrator
 $ mv LocalSettings.php.shadow LocalSettings.php # enable extensions
 $ php maintenance/update.php --quick
+$ php /var/www/html/w/extensions/CirrusSearch/maintenance/updateSearchIndexConfig.php
 ```
 
 The installation script gives us a root user with name `Administrator` and password `password`.
@@ -83,6 +86,7 @@ If you have a previous MediaWiki setup, follow the steps:
 - make sure the `docker-compose.yml` file has the correct database settings
 - run `upgrade.php`
 - run `docker-compose up`
+- rebuild ElasticSearch index
 
 ## Maintenance
 
@@ -108,6 +112,14 @@ To restore database from a MySQL dump file:
 - put the dump file at `data/dump` folder
 - run `docker-compose up`, the database will be created
 
+### Rebuild ElasticSearch index
+
+If your previous installation does not use ElasticSearch, you need to bootstrap the search index:
+
+```bash
+$ php /var/www/html/w/extensions/CirrusSearch/maintenance/forceSearchIndex.php --skipLinks --indexOnSkip
+$ php /var/www/html/w/extensions/CirrusSearch/maintenance/forceSearchIndex.php --skipParse
+```
 
 ## Development
 

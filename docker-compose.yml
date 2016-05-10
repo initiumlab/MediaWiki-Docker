@@ -1,5 +1,10 @@
 version: '2'
 services:
+  elasticsearch:
+    build:
+      context: .
+      dockerfile: docker/elasticsearch/Dockerfile
+    image: cllu/mediawiki-elasticsearch:1.7.5-1
   mysql:
     image: mysql:5.7.12
     environment:
@@ -16,10 +21,11 @@ services:
     build:
       context: .
       dockerfile: docker/mediawiki/Dockerfile
-    image: cllu/mediawiki:1.26.2-3
+    image: cllu/mediawiki:1.26.2-4
     ports:
       - 80:80
     links:
+      - elasticsearch
       - mysql
       - parsoid
     environment:

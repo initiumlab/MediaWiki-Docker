@@ -50,3 +50,9 @@
 [submodule "mediawiki/extensions/Widgets"]
 	path = mediawiki/extensions/Widgets
 	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Widgets.git
+[submodule "mediawiki/extensions/CirrusSearch"]
+	path = mediawiki/extensions/CirrusSearch
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CirrusSearch.git
+[submodule "mediawiki/extensions/Elastica"]
+	path = mediawiki/extensions/Elastica
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Elastica.git

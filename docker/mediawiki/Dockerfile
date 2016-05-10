@@ -36,6 +36,7 @@ RUN apt-get install -y --no-install-recommends python \
   && cd /var/www/html/w/extensions/SyntaxHighlight_GeSHi \
   && composer install --no-dev
 RUN chown -R www-data:www-data /var/www/html/w/extensions/Widgets/compiled_templates
+RUN cd /var/www/html/w/extensions/Elastica && composer install --no-dev
 
 COPY mediawiki/skins /var/www/html/w/skins
 

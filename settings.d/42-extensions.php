@@ -36,3 +36,8 @@ $wgGroupPermissions['sysop']['lookupuser'] = true;
 require_once "$IP/extensions/Widgets/Widgets.php";
 
 $wgPFEnableStringFunctions = true;
+
+wfLoadExtension( 'Elastica' );
+require_once "$IP/extensions/CirrusSearch/CirrusSearch.php";
+$wgCirrusSearchServers = array( 'elasticsearch' );
+$wgSearchType = 'CirrusSearch';
