@@ -32,7 +32,9 @@ RUN cd /var/www/html/w && composer install --no-dev
 COPY mediawiki/extensions /var/www/html/w/extensions
 
 # Some extensions require additional setup
-RUN cd /var/www/html/w/extensions/SyntaxHighlight_GeSHi && composer install --no-dev
+RUN apt-get install -y --no-install-recommends python \
+  && cd /var/www/html/w/extensions/SyntaxHighlight_GeSHi \
+  && composer install --no-dev
 RUN chown -R www-data:www-data /var/www/html/w/extensions/Widgets/compiled_templates
 
 COPY mediawiki/skins /var/www/html/w/skins

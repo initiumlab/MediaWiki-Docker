@@ -34,3 +34,5 @@ $wgGroupPermissions['*']['lookupuser'] = false;
 $wgGroupPermissions['sysop']['lookupuser'] = true;
 
 require_once "$IP/extensions/Widgets/Widgets.php";
+
+$wgPFEnableStringFunctions = true;

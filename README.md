@@ -21,6 +21,10 @@ Installed extensions:
 - [Widgets](https://www.mediawiki.org/wiki/Extension:Widgets)
 - [WikiEditor](https://www.mediawiki.org/wiki/Extension:WikiEditor)
 
+Other features:
+
+- [StringFunctions](https://www.mediawiki.org/wiki/Extension:StringFunctions) are enabled
+
 ## Usage
 
 The image is built and uploaded to Docker Hub, so there is no need to clone the repository.
@@ -89,12 +93,13 @@ To run the `upgrade.php` script:
 ```
 $ docker-compose run mediawiki php /var/www/html/w/maintenance/update.php
 ```
+
 ### Database backup and restore
 
-To dump the database, first start `docker-compose up`, find the mysql container id by `docker-compose ps`, and then run:
+To dump the database, run:
 
 ```
-$ docker exec <MYSQL_CONTAINER_ID> sh -c 'exec mysqldump initium_wiki -B -uroot -p"password"' > dump.sql
+$ docker-compose exec mysql sh -c 'exec mysqldump initium_wiki -B -uroot -p"password"' > dump.sql
 ```
 
 To restore database from a MySQL dump file:
