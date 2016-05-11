@@ -51,4 +51,7 @@ $wgCargoPageDataColumns[] = CARGO_STORE_FULL_TEXT;
 $wgCargoPageDataColumns[] = CARGO_STORE_CATEGORIES;
 $wgCargoPageDataColumns[] = CARGO_STORE_NUM_REVISIONS;
 
+# Additional SQL functions
+$wgCargoAllowedSQLFunctions[] = 'NOW';
+
 require_once "$IP/extensions/RandomSelection/RandomSelection.php";
