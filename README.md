@@ -97,6 +97,13 @@ If you have a previous MediaWiki setup, follow the steps:
 
 ### Upgrade
 
+If you want to use a newer version of images, pull the corresponding image and change image tag in `docker-compose.yml`.
+After that, restart the container:
+
+```bash
+$ docker-compose up -d --no-deps mediawiki
+```
+
 To run the `upgrade.php` script:
 
 ```
