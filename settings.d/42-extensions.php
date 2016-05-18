@@ -57,3 +57,5 @@ $wgCargoAllowedSQLFunctions[] = 'NOW';
 require_once "$IP/extensions/RandomSelection/RandomSelection.php";
 
 require_once "$IP/extensions/ExternalData/ExternalData.php";
+
+require_once("$IP/extensions/Embed/Embed.php");

@@ -1,3 +1,7 @@
+# cllu/mediawiki:1.26.2-6, May 18, 2016
+
+- Add SimpleEmbed/ExternalData extensions
+
 # cllu/mediawiki:1.26.2-5, May 11, 2016
 
 - enable NOW function for Cargo
