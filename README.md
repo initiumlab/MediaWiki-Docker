@@ -11,6 +11,7 @@ Installed extensions:
 - [Echo](https://www.mediawiki.org/wiki/Extension:Echo)
 - [Editcount](https://www.mediawiki.org/wiki/Extension:Editcount)
 - [Elastica](https://www.mediawiki.org/wiki/Extension:Elastica)
+- [External Data](https://www.mediawiki.org/wiki/Extension:External_Data)
 - [Flow](https://www.mediawiki.org/wiki/Extension:Flow)
 - [InputBox](https://www.mediawiki.org/wiki/Extension:InputBox)
 - [Interwiki](https://www.mediawiki.org/wiki/Extension:Interwiki)

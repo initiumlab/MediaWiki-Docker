@@ -65,3 +65,6 @@
 [submodule "mediawiki/extensions/RandomSelection"]
 	path = mediawiki/extensions/RandomSelection
 	url = https://github.com/Inclumedia/RandomSelection.git
+[submodule "mediawiki/extensions/ExternalData"]
+	path = mediawiki/extensions/ExternalData
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ExternalData.git
