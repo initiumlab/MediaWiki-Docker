@@ -106,10 +106,10 @@ After that, restart the container:
 $ docker-compose up -d --no-deps mediawiki
 ```
 
-To run the `upgrade.php` script:
+If database migration is needed, run the `upgrade.php` script:
 
 ```
-$ docker-compose run mediawiki php /var/www/html/w/maintenance/update.php
+$ docker-compose exec mediawiki php /var/www/html/w/maintenance/update.php
 ```
 
 ### Database backup and restore
