@@ -1,6 +1,10 @@
+# cllu/mediawiki:1.26.2-7, May 18, 2016
+
+- fix missing VisualEditor dependencies in build 1.26.2-6
+
 # cllu/mediawiki:1.26.2-6, May 18, 2016
 
-- Add SimpleEmbed/ExternalData extensions
+- add SimpleEmbed/ExternalData extensions
 
 # cllu/mediawiki:1.26.2-5, May 11, 2016
 
