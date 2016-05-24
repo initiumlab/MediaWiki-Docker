@@ -1,6 +1,6 @@
 # MediaWiki Docker Image
 
-Based on MediaWiki release [1.26.2](https://www.mediawiki.org/wiki/Release_notes/1.26#MediaWiki_1.26.2).
+Based on MediaWiki release [1.26.3](https://www.mediawiki.org/wiki/Release_notes/1.26#MediaWiki_1.26.3).
 
 Installed extensions:
 

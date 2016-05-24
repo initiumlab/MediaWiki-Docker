@@ -1,3 +1,7 @@
+# cllu/mediawiki:1.26-9, May 24, 2016
+
+- upgrade to MediaWiki 1.26.3
+
 # cllu/mediawiki:1.26.2-8, May 24, 2016
 
 - introduce composer to install extensions
