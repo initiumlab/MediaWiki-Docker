@@ -21,7 +21,7 @@ services:
     build:
       context: .
       dockerfile: docker/mediawiki/Dockerfile
-    image: cllu/mediawiki:1.26.2-7
+    image: cllu/mediawiki:1.26.2-8
     ports:
       - 80:80
     links:

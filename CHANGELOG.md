@@ -1,3 +1,8 @@
+# cllu/mediawiki:1.26.2-8, May 24, 2016
+
+- introduce composer to install extensions
+- add SubPageList/ParserHooks extensions
+
 # cllu/mediawiki:1.26.2-7, May 18, 2016
 
 - fix missing VisualEditor dependencies in build 1.26.2-6

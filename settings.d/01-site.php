@@ -37,8 +37,9 @@ $wgExternalLinkTarget = '_blank';
 # Enables the magic words {{PAGESINNAMESPACE}}
 $wgAllowSlowParserFunctions = true;
 
-# Enable subpages in the main namespace
+# Enable subpages in the main and user namespaces
 $wgNamespacesWithSubpages[NS_MAIN] = true;
+$wgNamespacesWithSubpages[NS_USER] = true;
 
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
 $wgUseInstantCommons = false;

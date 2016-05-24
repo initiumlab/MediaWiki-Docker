@@ -19,10 +19,12 @@ Installed extensions:
 - [LookupUser](https://www.mediawiki.org/wiki/Extension:LookupUser)
 - [News](https://www.mediawiki.org/wiki/Extension:News)
 - [ParserFunctions](https://www.mediawiki.org/wiki/Extension:ParserFunctions)
+- [ParserHooks](https://www.mediawiki.org/wiki/Extension:ParserHooks)
 - [RandomSelection](https://www.mediawiki.org/wiki/Extension:RandomSelection)
 - [Renameuser](https://www.mediawiki.org/wiki/Extension:Renameuser)
 - [ReplaceText](https://www.mediawiki.org/wiki/Extension:ReplaceText)
 - [SemanticForms](https://www.mediawiki.org/wiki/Extension:SemanticForms)
+- [SubPageList](https://www.mediawiki.org/wiki/Extension:SubPageList)
 - [SyntaxHighlight_GeSHi](https://www.mediawiki.org/wiki/Extension:SyntaxHighlight), depends on Python
 - [VisualEditor](https://www.mediawiki.org/wiki/Extension:VisualEditor)
 - [Widgets](https://www.mediawiki.org/wiki/Extension:Widgets)
@@ -52,7 +54,7 @@ services:
   parsoid:
     image: cllu/mediawiki-parsoid:1.26.2-1
   mediawiki:
-    image: cllu/mediawiki:1.26.2-1
+    image: cllu/mediawiki:1.26.2-8
     ports:
       - 80:80
     links:
@@ -136,6 +138,11 @@ $ php /var/www/html/w/extensions/CirrusSearch/maintenance/forceSearchIndex.php -
 ```
 
 ## Development
+
+There are two methods to install new extensions:
+
+- Git submodule: put the extension files in `mediawiki/extensions` folder and configure the extension in `settings.d/42-extensions.php` file.
+- PHP Composer: add an entry to `docker/mediawiki/composer.local.json`.
 
 If you want to build the image by yourself:
 

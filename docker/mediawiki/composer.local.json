@@ -1,0 +1,5 @@
+{
+  "require": {
+    "mediawiki/sub-page-list": "1.2.0"
+  }
+}

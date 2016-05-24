@@ -23,6 +23,7 @@ RUN set -x; \
 RUN a2enmod rewrite
 
 COPY mediawiki/core /var/www/html/w/
+COPY docker/mediawiki/composer.local.json /var/www/html/w/
 
 # install Composer in /usr/bin directory
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer
