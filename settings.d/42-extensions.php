@@ -69,3 +69,9 @@ $GLOBALS['egSPLAutorefresh'] = true;
 wfLoadExtension( 'Gadgets' );
 
 require_once "$IP/extensions/MultimediaViewer/MultimediaViewer.php";
+
+require_once( "$IP/extensions/UploadWizard/UploadWizard.php" );
+$wgUploadWizardConfig['tutorial']['skip'] = true;
+$wgUploadWizardConfig['enableLicensePreference'] = false;
+$wgUploadWizardConfig['licensing']['defaultType'] = 'choice';
+$wgUploadWizardConfig['licensing']['ownWorkDefault'] = 'choice';

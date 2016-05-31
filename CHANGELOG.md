@@ -1,3 +1,7 @@
+# cllu/mediawiki:1.26-12, May 31, 2016
+
+- add UploadWizard extension
+
 # cllu/mediawiki:1.26-11, May 31, 2016
 
 - add MultimediaViewer extension

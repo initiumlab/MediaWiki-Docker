@@ -28,6 +28,7 @@ Installed extensions:
 - [SemanticForms](https://www.mediawiki.org/wiki/Extension:SemanticForms)
 - [SubPageList](https://www.mediawiki.org/wiki/Extension:SubPageList)
 - [SyntaxHighlight_GeSHi](https://www.mediawiki.org/wiki/Extension:SyntaxHighlight), depends on Python
+- [UploadWizard](https://www.mediawiki.org/wiki/Extension:UploadWizard)
 - [VisualEditor](https://www.mediawiki.org/wiki/Extension:VisualEditor)
 - [Widgets](https://www.mediawiki.org/wiki/Extension:Widgets)
 - [WikiEditor](https://www.mediawiki.org/wiki/Extension:WikiEditor)

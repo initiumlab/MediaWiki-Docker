@@ -74,3 +74,6 @@
 [submodule "mediawiki/extensions/MultimediaViewer"]
 	path = mediawiki/extensions/MultimediaViewer
 	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MultimediaViewer.git
+[submodule "mediawiki/extensions/UploadWizard"]
+	path = mediawiki/extensions/UploadWizard
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/UploadWizard.git
