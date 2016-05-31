@@ -1,3 +1,7 @@
+# cllu/mediawiki:1.26-10, May 24, 2016
+
+- add Gadgets extension
+
 # cllu/mediawiki:1.26-9, May 24, 2016
 
 - upgrade to MediaWiki 1.26.3

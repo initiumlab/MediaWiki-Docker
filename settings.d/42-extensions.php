@@ -65,3 +65,5 @@ require_once "$IP/extensions/ExternalData/ExternalData.php";
 require_once("$IP/extensions/Embed/Embed.php");
 
 $GLOBALS['egSPLAutorefresh'] = true;
+
+wfLoadExtension( 'Gadgets' );
