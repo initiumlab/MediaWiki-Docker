@@ -18,6 +18,7 @@ Installed extensions:
 - [InputBox](https://www.mediawiki.org/wiki/Extension:InputBox)
 - [Interwiki](https://www.mediawiki.org/wiki/Extension:Interwiki)
 - [LookupUser](https://www.mediawiki.org/wiki/Extension:LookupUser)
+- [MultimediaViewer](https://www.mediawiki.org/wiki/Extension:MultimediaViewer)
 - [News](https://www.mediawiki.org/wiki/Extension:News)
 - [ParserFunctions](https://www.mediawiki.org/wiki/Extension:ParserFunctions)
 - [ParserHooks](https://www.mediawiki.org/wiki/Extension:ParserHooks)

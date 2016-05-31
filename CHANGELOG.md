@@ -1,4 +1,8 @@
-# cllu/mediawiki:1.26-10, May 24, 2016
+# cllu/mediawiki:1.26-11, May 31, 2016
+
+- add MultimediaViewer extension
+
+# cllu/mediawiki:1.26-10, May 31, 2016
 
 - add Gadgets extension
 

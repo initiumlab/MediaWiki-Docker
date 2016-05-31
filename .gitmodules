@@ -71,3 +71,6 @@
 [submodule "mediawiki/extensions/Gadgets"]
 	path = mediawiki/extensions/Gadgets
 	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Gadgets.git
+[submodule "mediawiki/extensions/MultimediaViewer"]
+	path = mediawiki/extensions/MultimediaViewer
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MultimediaViewer.git
