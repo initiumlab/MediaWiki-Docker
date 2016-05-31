@@ -14,6 +14,7 @@ Installed extensions:
 - [Embed](https://www.mediawiki.org/wiki/Extension:SimpleEmbed)
 - [External Data](https://www.mediawiki.org/wiki/Extension:External_Data)
 - [Flow](https://www.mediawiki.org/wiki/Extension:Flow)
+- [Gadgets](https://www.mediawiki.org/wiki/Extension:Gadgets)
 - [InputBox](https://www.mediawiki.org/wiki/Extension:InputBox)
 - [Interwiki](https://www.mediawiki.org/wiki/Extension:Interwiki)
 - [LookupUser](https://www.mediawiki.org/wiki/Extension:LookupUser)
