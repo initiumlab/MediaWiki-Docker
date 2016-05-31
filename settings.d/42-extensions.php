@@ -47,7 +47,8 @@ $wgCirrusSearchServers = array( 'elasticsearch' );
 $wgSearchType = 'CirrusSearch';
 
 include_once "$IP/extensions/SemanticForms/SemanticForms.php";
-require_once( "$IP/extensions/Cargo/Cargo.php" );
+
+wfLoadExtension( 'Cargo' );
 $wgCargoPageDataColumns[] = CARGO_STORE_CREATION_DATE;
 $wgCargoPageDataColumns[] = CARGO_STORE_MODIFICATION_DATE;
 $wgCargoPageDataColumns[] = CARGO_STORE_CREATOR;
@@ -55,22 +56,20 @@ $wgCargoPageDataColumns[] = CARGO_STORE_FULL_TEXT;
 $wgCargoPageDataColumns[] = CARGO_STORE_CATEGORIES;
 $wgCargoPageDataColumns[] = CARGO_STORE_NUM_REVISIONS;
 
-# Additional SQL functions
-$wgCargoAllowedSQLFunctions[] = 'NOW';
-
 require_once "$IP/extensions/RandomSelection/RandomSelection.php";
 
 require_once "$IP/extensions/ExternalData/ExternalData.php";
 
-require_once("$IP/extensions/Embed/Embed.php");
+require_once "$IP/extensions/Embed/Embed.php";
 
+# For SubPageList, which is installed via Composer
 $GLOBALS['egSPLAutorefresh'] = true;
 
 wfLoadExtension( 'Gadgets' );
 
 require_once "$IP/extensions/MultimediaViewer/MultimediaViewer.php";
 
-require_once( "$IP/extensions/UploadWizard/UploadWizard.php" );
+require_once "$IP/extensions/UploadWizard/UploadWizard.php";
 $wgUploadWizardConfig['tutorial']['skip'] = true;
 $wgUploadWizardConfig['enableLicensePreference'] = false;
 $wgUploadWizardConfig['licensing']['defaultType'] = 'choice';

@@ -4,7 +4,7 @@ Based on MediaWiki release [1.26.3](https://www.mediawiki.org/wiki/Release_notes
 
 Installed extensions:
 
-- [Cargo](https://www.mediawiki.org/wiki/Extension:Cargo)
+- [Cargo](https://www.mediawiki.org/wiki/Extension:Cargo), v1.0.1
 - [CirrusSearch](https://www.mediawiki.org/wiki/Extension:CirrusSearch)
 - [Cite](https://www.mediawiki.org/wiki/Extension:Cite)
 - CustomParser
@@ -25,7 +25,7 @@ Installed extensions:
 - [RandomSelection](https://www.mediawiki.org/wiki/Extension:RandomSelection)
 - [Renameuser](https://www.mediawiki.org/wiki/Extension:Renameuser)
 - [ReplaceText](https://www.mediawiki.org/wiki/Extension:ReplaceText)
-- [SemanticForms](https://www.mediawiki.org/wiki/Extension:SemanticForms)
+- [SemanticForms](https://www.mediawiki.org/wiki/Extension:SemanticForms), v3.6
 - [SubPageList](https://www.mediawiki.org/wiki/Extension:SubPageList)
 - [SyntaxHighlight_GeSHi](https://www.mediawiki.org/wiki/Extension:SyntaxHighlight), depends on Python
 - [UploadWizard](https://www.mediawiki.org/wiki/Extension:UploadWizard)

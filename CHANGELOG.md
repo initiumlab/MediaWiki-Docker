@@ -1,3 +1,7 @@
+# cllu/mediawiki:1.26-13, May 31, 2016
+
+- Upgrade Cargo to 1.0.1 and SemanticForms to 3.6
+
 # cllu/mediawiki:1.26-12, May 31, 2016
 
 - add UploadWizard extension
