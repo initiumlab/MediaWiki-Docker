@@ -1,6 +1,7 @@
 # MediaWiki Docker Image
 
 Based on MediaWiki release [1.27](https://www.mediawiki.org/wiki/Release_notes/1.27).
+Requires Docker version 1.11.2.
 
 Installed extensions (32 in total):
 
