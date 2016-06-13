@@ -1,4 +1,8 @@
-# cllu/mediawiki:1.27-1, June 14, 2016
+# cllu/mediawiki:1.27-3, June 14, 2016
+
+- Fix LookupUser extension due to removed message API
+
+# cllu/mediawiki:1.27-2, June 14, 2016
 
 - add Scribunto extension
 

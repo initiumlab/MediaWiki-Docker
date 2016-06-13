@@ -48,7 +48,7 @@ function efLoadLookupUserLink( $id, $nt, &$links ) {
 	if( $wgUser->isAllowed( 'lookupuser' ) && !User::isIP( $nt->getText() ) ) {
 		$links[] = Linker::linkKnown(
 			SpecialPage::getTitleFor( 'LookupUser' ),
-			wfMsgHtml( 'lookupuser' ),
+			wfMessage( 'lookupuser' )->escaped(),
 			array(),
 			array( 'target' => $nt->getText() )
 		);
