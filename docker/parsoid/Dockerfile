@@ -1,9 +1,4 @@
-FROM buildpack-deps:jessie
-
-RUN set -x; \
-    apt-get update \
-    && apt-get install -y --no-install-recommends node npm \
-    && rm -rf /var/lib/apt/lists/*
+FROM node:0.12.14
 
 RUN mkdir -p /app
 COPY mediawiki/parsoid /app
@@ -13,4 +8,4 @@ EXPOSE 8000
 
 COPY docker/parsoid/localsettings.js /app/localsettings.js
 
-CMD ["/usr/bin/nodejs", "/app/bin/server.js", "-n4"]
+CMD ["/app/bin/server.js", "-n4"]

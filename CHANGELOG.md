@@ -1,5 +1,6 @@
-# cllu/mediawiki:1.26-14, June 13, 2016
+# cllu/mediawiki:1.27-1, June 14, 2016
 
+- Upgrade to MediaWiki 1.27
 - add CodeEditor/Collection extensions
 - add OfflineContentGenerator (cllu/mediawiki-ocg) service
 

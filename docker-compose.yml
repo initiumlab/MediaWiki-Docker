@@ -22,7 +22,7 @@ services:
     build:
       context: .
       dockerfile: docker/parsoid/Dockerfile
-    image: cllu/mediawiki-parsoid:1.26-1
+    image: cllu/mediawiki-parsoid:1.27-1
     networks:
       mediawiki-internal:
         ipv4_address: 172.27.1.3
@@ -34,7 +34,7 @@ services:
     build:
       context: .
       dockerfile: docker/ocg/Dockerfile
-    image: cllu/mediawiki-ocg:1.26-1
+    image: cllu/mediawiki-ocg:1.27-1
     networks:
       ocg-internal:
       mediawiki-internal:
@@ -43,7 +43,7 @@ services:
     build:
       context: .
       dockerfile: docker/mediawiki/Dockerfile
-    image: cllu/mediawiki:1.26-13
+    image: cllu/mediawiki:1.27-1
     ports:
       - 80:80
     environment:
