@@ -43,7 +43,7 @@ services:
     build:
       context: .
       dockerfile: docker/mediawiki/Dockerfile
-    image: cllu/mediawiki:1.27-1
+    image: cllu/mediawiki:1.27-2
     ports:
       - 80:80
     environment:

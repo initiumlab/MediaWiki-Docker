@@ -97,3 +97,6 @@
 [submodule "mediawiki/ocg/mw-ocg-texter"]
 	path = mediawiki/ocg/mw-ocg-texter
 	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Collection/OfflineContentGenerator/text_renderer
+[submodule "mediawiki/extensions/Scribunto"]
+	path = mediawiki/extensions/Scribunto
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Scribunto.git

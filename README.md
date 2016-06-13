@@ -2,7 +2,7 @@
 
 Based on MediaWiki release [1.27](https://www.mediawiki.org/wiki/Release_notes/1.27).
 
-Installed extensions (31 in total):
+Installed extensions (32 in total):
 
 - [Cargo](https://www.mediawiki.org/wiki/Extension:Cargo), v1.0.1
 - [CirrusSearch](https://www.mediawiki.org/wiki/Extension:CirrusSearch)
@@ -28,6 +28,7 @@ Installed extensions (31 in total):
 - [RandomSelection](https://www.mediawiki.org/wiki/Extension:RandomSelection)
 - [Renameuser](https://www.mediawiki.org/wiki/Extension:Renameuser)
 - [ReplaceText](https://www.mediawiki.org/wiki/Extension:ReplaceText)
+- [Scribunto](https://www.mediawiki.org/wiki/Extension:Scribunto)
 - [SemanticForms](https://www.mediawiki.org/wiki/Extension:SemanticForms), v3.6
 - [SubPageList](https://www.mediawiki.org/wiki/Extension:SubPageList)
 - [SyntaxHighlight_GeSHi](https://www.mediawiki.org/wiki/Extension:SyntaxHighlight), depends on Python

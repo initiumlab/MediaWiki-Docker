@@ -96,3 +96,7 @@ $wgCollectionFormats = array(
 $wgLicenseURL = "http://creativecommons.org/licenses/by-sa/3.0/";
 $wgCollectionPortletFormats = array( 'rdf2latex' );
 
+require_once "$IP/extensions/Scribunto/Scribunto.php";
+$wgScribuntoDefaultEngine = 'luastandalone';
+$wgScribuntoUseGeSHi = true;
+$wgScribuntoUseCodeEditor = true;

@@ -1,5 +1,9 @@
 # cllu/mediawiki:1.27-1, June 14, 2016
 
+- add Scribunto extension
+
+# cllu/mediawiki:1.27-1, June 14, 2016
+
 - Upgrade to MediaWiki 1.27
 - add CodeEditor/Collection extensions
 - add OfflineContentGenerator (cllu/mediawiki-ocg) service
