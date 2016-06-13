@@ -5,6 +5,7 @@ wfLoadExtension( 'InputBox' );
 wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'Renameuser' );
 wfLoadExtension( 'SyntaxHighlight_GeSHi' );
+wfLoadExtension( 'PdfHandler' );
 
 wfLoadExtension( 'Interwiki' );
 // To grant sysops permissions to edit interwiki data
@@ -76,3 +77,22 @@ $wgUploadWizardConfig['licensing']['defaultType'] = 'choice';
 $wgUploadWizardConfig['licensing']['ownWorkDefault'] = 'choice';
 
 wfLoadExtension( 'CodeEditor' );
+
+// Collection extension
+require_once "$IP/extensions/Collection/Collection.php";
+// configuration borrowed from wmf-config/CommonSettings.php in operations/mediawiki-config
+$wgCollectionFormatToServeURL['rdf2latex'] = 'http://ocg:17080';
+
+// MediaWiki namespace is not a good default
+$wgCommunityCollectionNamespace = NS_PROJECT;
+
+// Sidebar cache doesn't play nice with this
+$wgEnableSidebarCache = false;
+
+$wgCollectionFormats = array(
+    'rdf2latex' => 'PDF',
+);
+
+$wgLicenseURL = "http://creativecommons.org/licenses/by-sa/3.0/";
+$wgCollectionPortletFormats = array( 'rdf2latex' );
+

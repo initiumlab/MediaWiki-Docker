@@ -80,3 +80,21 @@
 [submodule "mediawiki/extensions/CodeEditor"]
 	path = mediawiki/extensions/CodeEditor
 	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CodeEditor.git
+[submodule "mediawiki/extensions/Collection"]
+	path = mediawiki/extensions/Collection
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Collection.git
+[submodule "mediawiki/ocg/service"]
+	path = mediawiki/ocg/mw-ocg-service
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Collection/OfflineContentGenerator
+[submodule "mediawiki/ocg/bundler"]
+	path = mediawiki/ocg/mw-ocg-bundler
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Collection/OfflineContentGenerator/bundler
+[submodule "mediawiki/ocg/latex_renderer"]
+	path = mediawiki/ocg/mw-ocg-latexer
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Collection/OfflineContentGenerator/latex_renderer
+[submodule "mediawiki/extensions/PdfHandler"]
+	path = mediawiki/extensions/PdfHandler
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/PdfHandler.git
+[submodule "mediawiki/ocg/mw-ocg-texter"]
+	path = mediawiki/ocg/mw-ocg-texter
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Collection/OfflineContentGenerator/text_renderer

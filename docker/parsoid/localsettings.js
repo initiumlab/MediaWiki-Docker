@@ -53,7 +53,7 @@ exports.setup = function(parsoidConfig) {
   //parsoidConfig.defaultAPIProxyURI = 'http://proxy.example.org:8080';
 
   // Enable debug mode (prints extra debugging messages)
-  parsoidConfig.debug = true;
+  parsoidConfig.debug = false;
 
   // Use the PHP preprocessor to expand templates via the MW API (default true)
   //parsoidConfig.usePHPPreProcessor = false;

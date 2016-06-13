@@ -1,3 +1,8 @@
+# cllu/mediawiki:1.26-14, June 13, 2016
+
+- add CodeEditor/Collection extensions
+- add OfflineContentGenerator (cllu/mediawiki-ocg) service
+
 # cllu/mediawiki:1.26-13, May 31, 2016
 
 - Upgrade Cargo to 1.0.1 and SemanticForms to 3.6

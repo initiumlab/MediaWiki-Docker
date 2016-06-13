@@ -2,11 +2,13 @@
 
 Based on MediaWiki release [1.26.3](https://www.mediawiki.org/wiki/Release_notes/1.26#MediaWiki_1.26.3).
 
-Installed extensions:
+Installed extensions (31 in total):
 
 - [Cargo](https://www.mediawiki.org/wiki/Extension:Cargo), v1.0.1
 - [CirrusSearch](https://www.mediawiki.org/wiki/Extension:CirrusSearch)
 - [Cite](https://www.mediawiki.org/wiki/Extension:Cite)
+- [CodeEditor](https://www.mediawiki.org/wiki/Extension:CodeEditor)
+- [Collection](https://www.mediawiki.org/wiki/Extension:Collection)
 - CustomParser
 - [Echo](https://www.mediawiki.org/wiki/Extension:Echo)
 - [Editcount](https://www.mediawiki.org/wiki/Extension:Editcount)
@@ -22,6 +24,7 @@ Installed extensions:
 - [News](https://www.mediawiki.org/wiki/Extension:News)
 - [ParserFunctions](https://www.mediawiki.org/wiki/Extension:ParserFunctions)
 - [ParserHooks](https://www.mediawiki.org/wiki/Extension:ParserHooks)
+- [PdfHandler](https://www.mediawiki.org/wiki/Extension:PdfHandler)
 - [RandomSelection](https://www.mediawiki.org/wiki/Extension:RandomSelection)
 - [Renameuser](https://www.mediawiki.org/wiki/Extension:Renameuser)
 - [ReplaceText](https://www.mediawiki.org/wiki/Extension:ReplaceText)

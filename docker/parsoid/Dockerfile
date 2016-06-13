@@ -7,7 +7,7 @@ RUN set -x; \
 
 RUN mkdir -p /app
 COPY mediawiki/parsoid /app
-RUN cd /app && npm install
+RUN cd /app && npm install --production
 
 EXPOSE 8000
 
