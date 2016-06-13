@@ -74,3 +74,5 @@ $wgUploadWizardConfig['tutorial']['skip'] = true;
 $wgUploadWizardConfig['enableLicensePreference'] = false;
 $wgUploadWizardConfig['licensing']['defaultType'] = 'choice';
 $wgUploadWizardConfig['licensing']['ownWorkDefault'] = 'choice';
+
+wfLoadExtension( 'CodeEditor' );
