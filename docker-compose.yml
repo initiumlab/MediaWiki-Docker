@@ -43,7 +43,7 @@ services:
     build:
       context: .
       dockerfile: docker/mediawiki/Dockerfile
-    image: cllu/mediawiki:1.27-3
+    image: cllu/mediawiki:1.27-4
     ports:
       - 80:80
     environment:
@@ -58,6 +58,8 @@ services:
       WG_SMTP_PORT:
       WG_SMTP_USERNAME:
       WG_SMTP_PASSWORD:
+      WG_SECRET_READ_TOKEN: ee5ccd906ad783aeb2011
+      WG_WHITELIST_READ: Secret|Another Secret
     volumes:
       - ./data/images:/var/www/html/w/images
     networks:
