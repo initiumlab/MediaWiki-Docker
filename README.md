@@ -160,6 +160,27 @@ If you want to build the image by yourself:
   - For Widgets, you have to run `cd mediawiki/extensions/Widgets && git submodule update --init`.
 - `docker-compose build`
 
+## Troubleshooting
+
+### OCG 
+
+To test if the bundler can reach the MediaWiki service and generate bundle file:
+```bash
+$ /app/mw-ocg-bundler/bin/mw-ocg-bundler --parsoid-api http://parsoid:8000 --php-api http://mediawiki/w --api-version parsoid3 -o bundle.zip -v -h mediawiki "Main Page"
+```
+
+To test if the latex renderer is able to render the generated bundle file:
+
+```bash
+/app/mw-ocg-latexer/bin/mw-ocg-latexer -l -D -o out.tex --lang ZH bundle.zip
+TEXINPUTS=tex/: xelatex out.tex
+```
+
+If the MediaWiki server address is not accessible for OCG server, add a line to `/app/mw-ocg-bundler/lib/metabook.js` line 245:
+
+```javascript
+metabook.wikis[0]['baseurl'] = "http://mediawiki/w";
+```
 
 ## License
 

@@ -34,7 +34,7 @@ services:
     build:
       context: .
       dockerfile: docker/ocg/Dockerfile
-    image: cllu/mediawiki-ocg:1.27-1
+    image: cllu/mediawiki-ocg:1.27-2
     networks:
       ocg-internal:
       mediawiki-internal:
