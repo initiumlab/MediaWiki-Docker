@@ -100,3 +100,6 @@
 [submodule "mediawiki/extensions/Scribunto"]
 	path = mediawiki/extensions/Scribunto
 	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Scribunto.git
+[submodule "mediawiki/extensions/DynamicPageList"]
+	path = mediawiki/extensions/DynamicPageList
+	url = https://github.com/cllu/mediawiki-extensions-DynamicPageList.git

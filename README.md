@@ -11,6 +11,7 @@ Installed extensions (32 in total):
 - [CodeEditor](https://www.mediawiki.org/wiki/Extension:CodeEditor)
 - [Collection](https://www.mediawiki.org/wiki/Extension:Collection)
 - CustomParser
+- [DynamicPageList](https://www.mediawiki.org/wiki/Extension:DynamicPageList_(third-party))
 - [Echo](https://www.mediawiki.org/wiki/Extension:Echo)
 - [Editcount](https://www.mediawiki.org/wiki/Extension:Editcount)
 - [Elastica](https://www.mediawiki.org/wiki/Extension:Elastica)

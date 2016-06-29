@@ -100,3 +100,5 @@ require_once "$IP/extensions/Scribunto/Scribunto.php";
 $wgScribuntoDefaultEngine = 'luastandalone';
 $wgScribuntoUseGeSHi = true;
 $wgScribuntoUseCodeEditor = true;
+
+require_once "$IP/extensions/DynamicPageList/DynamicPageList.php";

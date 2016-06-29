@@ -1,3 +1,7 @@
+# cllu/mediawiki:1.27-5, June 29, 2016
+
+- Add DynamicPageList extension
+
 # cllu/mediawiki:1.27-3, June 14, 2016
 
 - Fix LookupUser extension due to removed message API
