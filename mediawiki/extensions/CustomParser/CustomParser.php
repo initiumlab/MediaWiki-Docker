@@ -47,6 +47,7 @@ class AlternateSyntaxParser {
         # Short-circuit if we're not processing main article text
         if (
             !$parser->mRevisionId &&
+            property_exists($this, 'mEditPreviewFlag') &&
             !$this->mEditPreviewFlag
         ) return true;
 
