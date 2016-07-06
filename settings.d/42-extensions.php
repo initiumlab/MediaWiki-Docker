@@ -102,3 +102,5 @@ $wgScribuntoUseGeSHi = true;
 $wgScribuntoUseCodeEditor = true;
 
 require_once "$IP/extensions/DynamicPageList/DynamicPageList.php";
+
+require_once "$IP/extensions/MyVariables/MyVariables.php";

@@ -1,3 +1,7 @@
+# cllu/mediawiki:1.27-6, July 6, 2016
+
+- Add MyVariables extension
+
 # cllu/mediawiki:1.27-5, June 29, 2016
 
 - Add DynamicPageList extension

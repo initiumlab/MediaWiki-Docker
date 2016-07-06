@@ -3,7 +3,7 @@
 Based on MediaWiki release [1.27](https://www.mediawiki.org/wiki/Release_notes/1.27).
 Requires Docker version 1.11.2.
 
-Installed extensions (32 in total):
+Installed extensions (34 in total):
 
 - [Cargo](https://www.mediawiki.org/wiki/Extension:Cargo), v1.0.1
 - [CirrusSearch](https://www.mediawiki.org/wiki/Extension:CirrusSearch)
@@ -23,6 +23,7 @@ Installed extensions (32 in total):
 - [Interwiki](https://www.mediawiki.org/wiki/Extension:Interwiki)
 - [LookupUser](https://www.mediawiki.org/wiki/Extension:LookupUser)
 - [MultimediaViewer](https://www.mediawiki.org/wiki/Extension:MultimediaViewer)
+- [MyVariables](https://www.mediawiki.org/wiki/Extension:MyVariables)
 - [News](https://www.mediawiki.org/wiki/Extension:News)
 - [ParserFunctions](https://www.mediawiki.org/wiki/Extension:ParserFunctions)
 - [ParserHooks](https://www.mediawiki.org/wiki/Extension:ParserHooks)

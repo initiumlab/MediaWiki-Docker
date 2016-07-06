@@ -103,3 +103,6 @@
 [submodule "mediawiki/extensions/DynamicPageList"]
 	path = mediawiki/extensions/DynamicPageList
 	url = https://github.com/cllu/mediawiki-extensions-DynamicPageList.git
+[submodule "mediawiki/extensions/MyVariables"]
+	path = mediawiki/extensions/MyVariables
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MyVariables.git
