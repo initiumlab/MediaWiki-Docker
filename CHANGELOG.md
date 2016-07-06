@@ -1,3 +1,7 @@
+# cllu/mediawiki:1.27-7, July 6, 2016
+
+- Upgrade MediaWiki core to official 1.27.0 release
+
 # cllu/mediawiki:1.27-6, July 6, 2016
 
 - Add MyVariables extension
