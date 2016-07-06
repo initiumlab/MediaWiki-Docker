@@ -53,7 +53,7 @@ A simple `docker-compose.yml` is enough to get started:
 version: '2'
 services:
   elasticsearch:
-    image: cllu/mediawiki-elasticsearch:1.7.5-1
+    image: initiumlab/mediawiki-elasticsearch:1.7.5-1
   mysql:
     image: mysql:5.7.12
     environment:
@@ -62,9 +62,9 @@ services:
     volumes:
       - ./data/dump:/docker-entrypoint-initdb.d
   parsoid:
-    image: cllu/mediawiki-parsoid:1.26.2-1
+    image: initiumlab/mediawiki-parsoid:1.26.2-1
   mediawiki:
-    image: cllu/mediawiki:1.26.2-8
+    image: initiumlab/mediawiki:1.26.2-8
     ports:
       - 80:80
     links:

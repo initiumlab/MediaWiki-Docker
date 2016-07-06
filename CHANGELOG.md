@@ -1,3 +1,7 @@
+# initiumlab/mediawiki:1.27-7, July 6, 2016
+
+- Switch to InitiumLab Docker Hub account
+
 # cllu/mediawiki:1.27-7, July 6, 2016
 
 - Upgrade MediaWiki core to official 1.27.0 release
