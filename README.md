@@ -47,42 +47,79 @@ Other features:
 ## Usage
 
 The image is built and uploaded to Docker Hub, so there is no need to clone the repository.
-A simple `docker-compose.yml` is enough to get started:
+
+### Start a new wiki
+
+Create a new directory and put a `docker-compose.yml` file with the following content:
 
 ```yaml
 version: '2'
 services:
   elasticsearch:
     image: initiumlab/mediawiki-elasticsearch:1.7.5-1
+    restart: always
+    networks:
+      mediawiki-internal:
+        ipv4_address: 172.27.1.10
   mysql:
     image: mysql:5.7.12
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: mediawiki
-    volumes:
-      - ./data/dump:/docker-entrypoint-initdb.d
+    networks:
+      mediawiki-internal:
+        ipv4_address: 172.27.1.11
   parsoid:
-    image: initiumlab/mediawiki-parsoid:1.26.2-1
+    image: initiumlab/mediawiki-parsoid:1.27-1
+    restart: always
+    networks:
+      mediawiki-internal:
+        ipv4_address: 172.27.1.3
+    command: /app/bin/server.js -n2
+  redis:
+    image: redis:2.8.23
+    restart: always
+    networks:
+      - ocg-internal
+  ocg:
+    image: initiumlab/mediawiki-ocg:1.27-2
+    restart: always
+    networks:
+      ocg-internal:
+      mediawiki-internal:
+        ipv4_address: 172.27.1.4
   mediawiki:
-    image: initiumlab/mediawiki:1.26.2-8
+    image: initiumlab/mediawiki:1.27-7
+    restart: always
     ports:
       - 80:80
-    links:
-      - mysql
-      - parsoid
     environment:
       WG_SITENAME: MediaWiki
-      WG_DBNAME: mediawiki
-      WG_SERVER: http://192.168.99.100
-      WG_SECRET_KEY: ee0efe6c8b4bc1ee5ccd906ad783aeb20115f061a3f9d85e6850612104920701
-      WG_UPGRADE_KEY: 08882e35d74f30cf
+      WG_DBNAME: mediawiki 
+      WG_SERVER: http://0.0.0.0
+      WG_SECRET_KEY: 85de0708611f2c909ac888af8acb2ce8d59fef57ae8aa0605a5e53d4c7c09bc6 
+      WG_UPGRADE_KEY: 833566970a042c1859d10b
     volumes:
       - ./data/images:/var/www/html/w/images
+    networks:
+      mediawiki-internal:
+        ipv4_address: 172.27.1.2
+
+networks:
+  mediawiki-internal:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.27.1.0/24
+        gateway: 172.27.1.1
+  ocg-internal:
+    driver: bridge
 ```
 
-### Start a new wiki
-
-Run `docker-compose exec mediawiki bash` to start a bash:
+After that, run `docker-compose up` to start the services.
+When the startup is done, run `docker-compose exec mediawiki bash` to start a bash and execute the following commands:
 
 ```
 $ cd /var/www/html/w
@@ -93,8 +130,8 @@ $ php maintenance/update.php --quick
 $ php /var/www/html/w/extensions/CirrusSearch/maintenance/updateSearchIndexConfig.php
 ```
 
-The installation script gives us a root user with name `Administrator` and password `password`.
-After setup, run `docker-compose up` to start the server.
+Open `http://0.0.0.0/` in your browser, and use the `Administrator` user with password `password` to login.
+The address `0.0.0.0` is the default container address in Docker for Mac, which you may need to change.
 
 ### Restore a previous wiki
 
@@ -106,8 +143,6 @@ If you have a previous MediaWiki setup, follow the steps:
 - run `upgrade.php`
 - run `docker-compose up`
 - rebuild ElasticSearch index
-
-## Maintenance
 
 ### Upgrade
 
